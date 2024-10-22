@@ -1,0 +1,20 @@
+<h2>
+ We played paper! </h2>
+
+ <h2>
+ They played <%= @comp_move %>!
+ </h2>
+
+ <% if @outcome == "We won!"%>
+ <h2 style="color: green">
+ <%= @outcome %>
+ </h2>
+ <% elsif @outcome == "We lost!"%>
+ <h2 style="color: red">
+ <%= @outcome %>
+ </h2>
+ <% else %>
+ <h2 style="color: black">
+ <%= @outcome %>
+ </h2>
+ <% end %>
